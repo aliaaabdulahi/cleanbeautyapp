@@ -8,16 +8,14 @@ import ProductCard from "./ProductCard";
  */
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.props.loadProducts();
   }
 
   render() {
+    console.log("props of home", this.props);
     const { username } = this.props;
+    const products = this.props.products;
     return (
       <div className="container-div">
         <div>
@@ -30,14 +28,16 @@ class Home extends React.Component {
             variant="outlined"
           />
         </div>
-        {this.props.products ? (
-          this.props.products.map((product) => (
-            <div>
-              <ProductCard props={product} key={product.id} />
+        {products ? (
+          products.map((product) => (
+            <div key={product.id}>
+              <img src={`https://sephora.com${product.heroImage}`} />
+              <h3>{product.brandName}</h3>
+              <h5>{product.displayName}</h5>
             </div>
           ))
         ) : (
-          <div></div>
+          <div>"Loading"</div>
         )}
       </div>
     );
