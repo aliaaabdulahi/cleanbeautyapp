@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: #ede0d4;
 }
 
 a {
@@ -13,9 +14,27 @@ label {
 nav a {
   display: inline-block;
   margin: 1em;
+  color: #7f5539;
 }
 
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  color: #7f5539;
+}
+
+h3 {
+  color: #7f5539;
+}
+input {
+  margin: auto;
+}
+
+.container-div {
+  display: flex;
+  flex-direction: column;
 }
