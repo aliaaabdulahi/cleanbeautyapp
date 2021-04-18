@@ -2,7 +2,7 @@ import React from "react";
 import { fetchProducts } from "../store/products";
 import { connect } from "react-redux";
 import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
+import ProductCard from "./ProductCard";
 /**
  * COMPONENT
  */
@@ -30,10 +30,10 @@ class Home extends React.Component {
             variant="outlined"
           />
         </div>
-        {this.state.products ? (
-          this.state.products.map((product) => (
+        {this.props.products ? (
+          this.props.products.map((product) => (
             <div>
-              <ProductCard props={product} />
+              <ProductCard props={product} key={product.id} />
             </div>
           ))
         ) : (
