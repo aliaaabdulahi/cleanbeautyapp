@@ -38,3 +38,13 @@ input {
   display: flex;
   flex-direction: column;
 }
+
+.product-card {
+  background-color: #b08968;
+  width: 250px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
