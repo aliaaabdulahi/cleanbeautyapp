@@ -8,4 +8,9 @@ router.get("/", async (req, res, next) => {
   res.send(products);
 });
 
+router.get("/:id", async (req, res, next) => {
+  const product = await Product.findByPk(req.params.id);
+  res.send(product);
+});
+
 module.exports = router;

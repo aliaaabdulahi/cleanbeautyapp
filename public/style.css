@@ -30,18 +30,17 @@ h1 {
 h3 {
   color: #7f5539;
 }
-input {
-  margin: auto;
-}
 
 .container-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .product-card {
   background-color: #b08968;
-  width: 250px;
+  justify-content: space-between;
+  width: 220px;
 }
 
 .card-container {

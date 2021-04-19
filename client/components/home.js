@@ -2,6 +2,7 @@ import React from "react";
 import { fetchProducts } from "../store/products";
 import { connect } from "react-redux";
 import TextField from "@material-ui/core/TextField";
+import { Link } from "react-router-dom";
 /**
  * COMPONENT
  */
@@ -49,9 +50,11 @@ class Home extends React.Component {
           {products ? (
             products.map((product) => (
               <div className="product-card" key={product.id}>
-                <img src={`https://sephora.com${product.heroImage}`} />
-                <h3>{product.brandName}</h3>
-                <h5>{product.displayName}</h5>
+                <Link to={`/products/${product.id}`}>
+                  <img src={`https://sephora.com${product.heroImage}`} />
+                  <h3>{product.brandName}</h3>
+                  <h5>{product.displayName}</h5>
+                </Link>
               </div>
             ))
           ) : (
