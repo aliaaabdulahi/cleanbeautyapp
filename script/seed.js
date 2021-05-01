@@ -5,7 +5,7 @@ require("data-forge-fs");
 
 const {
   db,
-  models: { User, Product, currentSku },
+  models: { Product },
 } = require("../server/db");
 
 let productData = dataForge
