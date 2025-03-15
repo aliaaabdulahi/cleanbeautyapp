@@ -19,6 +19,9 @@
   },
   "author": "Fullstack Academy of Code",
   "license": "MIT",
+  "engines": {
+    "node": "14.15.0"
+  },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "axios": "^0.21.1",
@@ -28,6 +31,7 @@
     "data-forge-fs": "0.0.9",
     "dotenv": "^16.4.7",
     "express": "^4.16.4",
+    "gatsby": "^4.25.9",
     "history": "^4.9.0",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.9.1",
