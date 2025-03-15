@@ -22,10 +22,11 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "axios": "^0.21.1",
-    "bcrypt": "^5.0.0",
+    "bcryptjs": "^3.0.2",
     "compression": "^1.7.3",
     "data-forge": "^1.8.17",
     "data-forge-fs": "0.0.9",
+    "dotenv": "^16.4.7",
     "express": "^4.16.4",
     "history": "^4.9.0",
     "jsonwebtoken": "^8.5.1",
